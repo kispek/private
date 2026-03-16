@@ -17,7 +17,7 @@ spec:
       containers: 
       - name: status-checker
         image: status-checker:v1
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Never
         ports:
         - containerPort: 8080
         readinessProbe:
